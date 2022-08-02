@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     socket = io('https://videocallnouven.herokuapp.com')
 
-    navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+    navigator.mediaDevices.getUserMedia({ video: true, audio: true})
       .then(stream => {
         setStream(stream)
         myVideo.current.srcObject = stream
