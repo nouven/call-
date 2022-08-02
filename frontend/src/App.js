@@ -15,7 +15,7 @@ function App() {
 
 
   useEffect(() => {
-    socket = io('http://192.168.1.103:5000')
+    socket = io('https://videocallnouven.herokuapp.com')
 
     navigator.mediaDevices.getUserMedia({ video: true, audio: false })
       .then(stream => {
